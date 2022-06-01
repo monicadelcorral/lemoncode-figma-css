@@ -1,0 +1,29 @@
+//----------------------------------------//
+//                                        //
+//  Module general stylesheet             //
+//                                        //
+//----------------------------------------//
+
+.module {
+    padding: $module_space 0;
+
+    &__inner {
+        @include layout();
+    }
+
+    &--dark {
+        --color-title: #{$color_1};
+        --color-title-2: #{$color_1};
+        
+        background-image: $gradient_1;
+        color: $color_1;    
+
+        .badge {
+            @include badge-dark();
+        }
+
+        .button {
+            @include button-light();
+        }
+    }
+}

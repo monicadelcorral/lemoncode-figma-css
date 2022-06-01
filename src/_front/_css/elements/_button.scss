@@ -1,0 +1,62 @@
+//----------------------------------------//
+//                                        //
+//  Button stylesheet                     //
+//                                        //
+//----------------------------------------//
+
+@mixin button-reset() {
+    max-width: 100%;
+    border-radius: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: transparent;
+    transition-property: color, background-color, background-position, border-color, box-shadow, opacity, height;
+    transition-duration: .4s;
+    transition-timing-function: ease-in;
+    -webkit-appearance: none;
+    cursor: pointer;
+    text-decoration: none;
+  
+    &.disabled, &[disabled] {
+      cursor: default;
+    }
+
+    input {
+      border: 0;
+      padding: 0;
+      margin: 0;
+      background: transparent;
+      white-space: normal;
+    }
+}
+
+
+@mixin button-light() {
+    background: $color_1;
+    color: $color_primary_500;
+}
+
+@mixin button-dark() {
+    background: $color_primary_500;
+    color: $color_1;
+}
+
+
+.button {
+    @include button-reset();
+    @include button-dark();
+    padding: 12px 24px;
+    margin: 0 0 .5rem 0;
+    border-radius: $button_corner;
+
+    &--2 {
+      @include button-light();  
+    }
+}
