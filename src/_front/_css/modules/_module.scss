@@ -11,6 +11,14 @@
         @include layout();
     }
 
+    &--medium {
+        background: $color_primary_900;
+
+        .button:not(.button--2):not(.button--3) {
+            @include button-medium();
+        }
+    }
+
     &--dark {
         --color-title: #{$color_1};
         --color-title-2: #{$color_1};

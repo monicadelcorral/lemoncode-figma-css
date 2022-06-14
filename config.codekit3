@@ -153,26 +153,6 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/src\/_front\/_css\/main.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/build\/_front\/_css\/main-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/src\/_front\/_css\/main.css.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/build\/_front\/_css\/main.css.map",
-      "oF" : 0
-    },
     "\/src\/_front\/_css\/main.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -278,6 +258,16 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/src\/_front\/_gfx\/background-illustration.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/_front\/_gfx\/background-illustration.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/src\/_front\/_gfx\/hero-bottom.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -287,6 +277,19 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/src\/_front\/_gfx\/image.jpeg" : {
+      "ft" : 16384,
+      "iS" : 1796979,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/_front\/_gfx\/image.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/src\/_html\/_layouts\/layout_default.pug" : {
       "cB" : 0,
@@ -381,7 +384,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-brick",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 675793345.87769198
+    "lastBuiltDate" : 676892137.89451504
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,

@@ -452,9 +452,13 @@ $fonts_path : '../_fonts/';
   background: transparent;
   white-space: normal;
 }
-.button--2 {
+.button.button--2 {
   background: #ffffff;
   color: #2C10EF;
+}
+.button.button--3 {
+  background: #8070F5;
+  color: #ffffff;
 }
 
 .badge {
@@ -489,7 +493,7 @@ body {
 }
 
 .module {
-  padding: 6.875rem 0;
+  padding: 5rem 0;
 }
 .module__inner {
   padding: 0 6.875rem;
@@ -510,6 +514,13 @@ body {
     padding-right: 1rem;
   }
 }
+.module--medium {
+  background: #D5CFFC;
+}
+.module--medium .button:not(.button--2):not(.button--3) {
+  background: #8070F5;
+  color: #ffffff;
+}
 .module--dark {
   --color-title: #ffffff;
   --color-title-2: #ffffff;
@@ -528,10 +539,22 @@ body {
 .hero {
   --color-title: #ffffff;
   --color-title-2: #ffffff;
-  padding: 6.875rem 0;
+  padding: 5rem 0;
   background-image: linear-gradient(109.15deg, #2C10EF 0%, #7562F4 31.77%, #8E7EF6 50.52%, #7462F4 68.75%, #4128F0 100%);
   color: #ffffff;
   position: relative;
+  /*&::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: $color_primary_500;
+      position: absolute;
+      left: 0;
+      top: 0;
+      pointer-events: none;
+      opacity: .5;
+  }*/
 }
 .hero__inner {
   padding: 0 6.875rem;
@@ -593,11 +616,14 @@ body {
 .hero__media {
   width: calc(100% - 500px);
   margin-right: -2rem;
+  position: relative;
 }
 .hero__media img {
   display: block;
   width: 100%;
   height: auto;
+  position: relative;
+  z-index: 10;
 }
 .hero::after {
   content: "";

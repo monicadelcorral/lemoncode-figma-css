@@ -9,6 +9,8 @@
     --color-title-2: #{$color_1};
     padding: $module_space 0;
     background-image: $gradient_1;
+    //background: url(../_gfx/image.jpg) center center no-repeat;
+    //background-size: cover;
     color: $color_1;
     position: relative;
 
@@ -54,11 +56,15 @@
     &__media {
         width: calc(100% - 500px);
         margin-right: -2rem;
+        position: relative;
+
 
         img {
             display: block;
             width: 100%;
             height: auto;
+            position: relative;
+            z-index: 10;
         }
     }
 
@@ -76,4 +82,17 @@
         bottom: 0;
         pointer-events: none;
     }
+
+    /*&::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: $color_primary_500;
+        position: absolute;
+        left: 0;
+        top: 0;
+        pointer-events: none;
+        opacity: .5;
+    }*/
 }

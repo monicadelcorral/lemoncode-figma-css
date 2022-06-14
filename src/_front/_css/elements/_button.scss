@@ -48,6 +48,11 @@
     color: $color_1;
 }
 
+@mixin button-medium() {
+    background: $color_primary_700;
+    color: $color_1;
+}
+
 
 .button {
     @include button-reset();
@@ -56,7 +61,11 @@
     margin: 0 0 .5rem 0;
     border-radius: $button_corner;
 
-    &--2 {
+    &.button--2 {
       @include button-light();  
+    }
+
+    &.button--3 {
+      @include button-medium();
     }
 }
