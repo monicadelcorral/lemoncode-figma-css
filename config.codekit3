@@ -7,13 +7,39 @@
       "uuidString" : "0AF6EAAE-B659-44DB-A85E-244E724F5D56"
     }
   ],
-  "creatorBuild" : "34365",
+  "creatorBuild" : "34434",
   "files" : {
     "\/build" : {
       "ft" : 65536,
       "oA" : 1,
       "oAP" : "\/build\/build",
       "oF" : 0
+    },
+    "\/src\/_assets\/hero-2.png" : {
+      "ft" : 32768,
+      "iS" : 544994,
+      "oA" : 2,
+      "oAP" : "\/build\/_assets\/hero-2.png",
+      "oF" : 1,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/src\/_assets\/hero-above.png" : {
+      "ft" : 32768,
+      "iS" : 490955,
+      "oA" : 0,
+      "oAP" : "\/build\/_assets\/hero-above.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/src\/_assets\/hero.png" : {
       "ft" : 32768,
@@ -213,6 +239,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/src\/_front\/_css\/specials\/_xmas.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/build\/_front\/_css\/specials\/_xmas.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/src\/_front\/_css\/structure\/_footer.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -263,6 +304,26 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/build\/_front\/_gfx\/background-illustration.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/src\/_front\/_gfx\/hero-below.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/_front\/_gfx\/hero-below.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/src\/_front\/_gfx\/hero-bottom-2.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/_front\/_gfx\/hero-bottom-2.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -384,7 +445,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-brick",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 676892137.89451504
+    "lastBuiltDate" : 690286326.20373905
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -1091,7 +1152,8 @@
         "active" : 1
       },
       "no-fallthrough" : {
-        "active" : 1
+        "active" : 1,
+        "optionString" : "{'allowEmptyCase': false}"
       },
       "no-floating-decimal" : {
         "active" : 0
@@ -1253,7 +1315,8 @@
         "optionString" : "'event', 'fdescribe'"
       },
       "no-restricted-imports" : {
-        "active" : 0
+        "active" : 0,
+        "optionString" : ""
       },
       "no-restricted-properties" : {
         "active" : 0,
@@ -1881,6 +1944,7 @@
       "createDeclarationFile" : 0,
       "jsxMode" : 0,
       "minifierStyle" : 0,
+      "moduleDetectionType" : 0,
       "moduleResolutionType" : 0,
       "moduleType" : 2,
       "removeComments" : 0,

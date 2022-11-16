@@ -23,6 +23,10 @@
 
         &__title {
             @include text-hierarchy--2;
+
+            & + .button {
+                margin-top: 2rem;
+            }
         }
 
         &__content {

@@ -12,7 +12,14 @@ body {
     font-variant-ligatures: common-ligatures;
     margin: 0;
     padding: 0;
-    background: $body_background;
+    background: var(--color-body-background);
   
     @include text--body();
 }
+
+/*
+@media (max-width: 1000px) {
+    html {
+        font-size: 75%;
+    }
+}*/

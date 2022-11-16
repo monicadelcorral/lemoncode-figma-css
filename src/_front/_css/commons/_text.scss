@@ -4,17 +4,12 @@
 //                                        //
 //----------------------------------------//
 
-:root {
-  --color-title: #{$color_ink_100};
-  --color-title-2: #{$color_ink_500};
-}
-
 @mixin text--body() {
   font-family: $font_family_1;
   font-size: $text_size_default;
   line-height: $text_lineheight_default;
   font-weight: $text_weight_default;
-  color: $color_ink_500;
+  color: var(--color-body-text);
 }
 
 @mixin text--body-small() {
@@ -30,12 +25,12 @@
   line-height: 1.1667em;
   margin: 0 0 1rem 0;
   color: var(--color-title);
-
+/*
   @if ($color == dark) {
     color: $color_ink_100;
   } @else if ($color == light) {
     color: $color_1;
-  }
+  }*/
 }
 
 @mixin text-hierarchy--2($color: false) {
@@ -108,6 +103,7 @@
 @mixin text--input-placeholder() {
   font-weight: 400;
 }
+
 
 .title--1 {
   @include text-hierarchy--1();
