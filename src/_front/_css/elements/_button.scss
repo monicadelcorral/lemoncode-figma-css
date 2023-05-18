@@ -41,6 +41,11 @@
 @mixin button-colors() {
     background: $button_color_bg;
     color: $button_color_text;
+
+    &:not([disabled]):not(.disabled):hover {
+      --button-color-background : #{$color_primary_300};
+      --button-color-text : #{$color_1};
+    }
 }
 
 @mixin button-light() {
@@ -57,7 +62,7 @@
 .button {
     @include button-reset();
     @include button-colors();
-    padding: 12px 24px;
+    //padding: 12px 24px;
     padding: 0.75rem 1.5rem;
     margin: 0 0 .5rem 0;
     border-radius: $button_corner;

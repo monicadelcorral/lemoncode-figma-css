@@ -22,11 +22,12 @@
         padding-right: 3rem;
 
         &__title {
-            @include text-hierarchy--2;
+            @include text-hierarchy--2();
 
             & + .button {
                 margin-top: 2rem;
             }
+            
         }
 
         &__content {

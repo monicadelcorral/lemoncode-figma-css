@@ -7,6 +7,11 @@
 .module {
     padding: $module_space 0;
 
+    @media (max-width: $mq_max_large_tablet) {
+        padding-top: $module_space_tablet;
+        padding-bottom: $module_space_tablet;
+    }
+    
     &__inner {
         @include layout();
     }

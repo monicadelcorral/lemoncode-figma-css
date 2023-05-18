@@ -38,7 +38,7 @@
   font-size: 2rem;
   line-height: 1.25em;
   margin: 0 0 1rem 0;
-  color: var(--color-title);
+  //color: var(--color-title);
 
   @if ($color == dark) {
     color: $color_ink_100;
