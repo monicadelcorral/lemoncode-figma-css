@@ -19,32 +19,20 @@
 
 // Titles
 
-@mixin text-hierarchy--1($color: false) {
+@mixin text-hierarchy--1() {
   font-weight: 900;
   font-size: 3rem;
   line-height: 1.1667em;
   margin: 0 0 1rem 0;
   color: var(--color-title);
-/*
-  @if ($color == dark) {
-    color: $color_ink_100;
-  } @else if ($color == light) {
-    color: $color_1;
-  }*/
 }
 
-@mixin text-hierarchy--2($color: false) {
+@mixin text-hierarchy--2() {
   font-weight: 900;
   font-size: 2rem;
   line-height: 1.25em;
   margin: 0 0 1rem 0;
-  //color: var(--color-title);
-
-  @if ($color == dark) {
-    color: $color_ink_100;
-  } @else if ($color == light) {
-    color: $color_1;
-  }
+  color: var(--color-title);
 }
 
 @mixin text-hierarchy--3() {
@@ -61,19 +49,12 @@
   margin: 0 0 1rem 0;
 }
 
-@mixin text-hierarchy--5($color: false) {
+@mixin text-hierarchy--5() {
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.5em;
   margin: 0 0 1rem 0;
-
-  color: var(--color-title-2);
-
-  @if ($color == dark) {
-    color: $color_ink_100;
-  } @else if ($color == light) {
-    color: $color_1;
-  }
+  color: var(--color-title);
 }
 
 

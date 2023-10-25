@@ -39,23 +39,23 @@
 
 
 @mixin button-colors() {
-    background: $button_color_bg;
-    color: $button_color_text;
+    background: var(--button-color-background);
+    color: var(--button-color-text);
 
     &:not([disabled]):not(.disabled):hover {
-      --button-color-background : #{$color_primary_300};
-      --button-color-text : #{$color_1};
+      --button-color-background : var(--button-hover-color-background);
+      --button-color-text : var(--button-hover-color-text);
     }
 }
 
-@mixin button-light() {
-    --button-color-background : #{$color_1};
-    --button-color-text : #{$color_primary_500};
+@mixin button-secondary() {
+    --button-color-background : var(--button-secondary-color-background);
+    --button-color-text : var(--button-secondary-color-text);
 }
 
-@mixin button-medium() {
-    --button-color-background : #{$color_primary_700};
-    --button-color-text : #{$color_1};
+@mixin button-tertiary() {
+  --button-color-background : var(--button-tertiary-color-background);
+  --button-color-text : var(--button-tertiary-color-text);
 }
 
 
@@ -68,10 +68,10 @@
     border-radius: $button_corner;
 
     &.button--2 {
-      @include button-light();  
+      @include button-secondary();  
     }
 
     &.button--3 {
-      @include button-medium();
+      @include button-tertiary();
     }
 }

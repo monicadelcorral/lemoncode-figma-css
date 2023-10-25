@@ -1,13 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&family=Work+Sans:wght@500&display=swap");
 :root {
-  --color-body-background: #ffffff;
-  --color-body-text: #090330;
-  --button-color-background: #2C10EF;
-  --button-color-text: #ffffff;
-  --module-color-background: #8070F5;
+  --color-accent: #2C10EF;
+  --color-accent-negative: #ffffff;
+  --color-accent-2: #8070F5;
+  --color-accent-2-negative: #ffffff;
+  --color-accent-3: #1A0A8F;
+  --color-accent-3-negative: #ffffff;
+  --color-text: #090330;
+  --color-text-2: #19181B;
+  --color-text-negative: #ffffff;
+  --color-body-background: var(--color-text-negative);
+  --color-body-text: var(--color-text);
+  --button-color-background: var(--color-accent);
+  --button-color-text: var(--color-accent-negative);
+  --button-hover-color-background: var(--color-accent-3);
+  --button-hover-color-text: var(--color-accent-3-negative);
+  --button-secondary-color-background: var(--color-accent-negative);
+  --button-secondary-color-text: var(--color-accent);
+  --button-tertiary-color-background: var(--color-accent-2);
+  --button-tertiary-color-text: var(--color-accent-2-negative);
+  --module-color-background: var(--color-accent-2);
   --module-gradient-background: linear-gradient(109.15deg, #2C10EF 0%, #7562F4 31.77%, #8E7EF6 50.52%, #7462F4 68.75%, #4128F0 100%);
-  --color-title: #19181B;
-  --color-title-2: #7B7986;
+  --color-title: var(--color-text-2);
 }
 
 /* Custom normalize.css with custom section */
@@ -361,12 +375,6 @@ $fonts_path : '../_fonts/';
   line-height: 1.1667em;
   margin: 0 0 1rem 0;
   color: var(--color-title);
-  /*
-    @if ($color == dark) {
-      color: $color_ink_100;
-    } @else if ($color == light) {
-      color: $color_1;
-    }*/
 }
 
 .title--2 {
@@ -374,6 +382,7 @@ $fonts_path : '../_fonts/';
   font-size: 2rem;
   line-height: 1.25em;
   margin: 0 0 1rem 0;
+  color: var(--color-title);
 }
 
 .title--3 {
@@ -395,7 +404,7 @@ $fonts_path : '../_fonts/';
   font-size: 1.25rem;
   line-height: 1.5em;
   margin: 0 0 1rem 0;
-  color: var(--color-title-2);
+  color: var(--color-title);
 }
 
 .button {
@@ -434,16 +443,16 @@ $fonts_path : '../_fonts/';
   white-space: normal;
 }
 .button:not([disabled]):not(.disabled):hover {
-  --button-color-background: #1A0A8F;
-  --button-color-text: #ffffff;
+  --button-color-background: var(--button-hover-color-background);
+  --button-color-text: var(--button-hover-color-text);
 }
 .button.button--2 {
-  --button-color-background: #ffffff;
-  --button-color-text: #2C10EF;
+  --button-color-background: var(--button-secondary-color-background);
+  --button-color-text: var(--button-secondary-color-text);
 }
 .button.button--3 {
-  --button-color-background: #8070F5;
-  --button-color-text: #ffffff;
+  --button-color-background: var(--button-tertiary-color-background);
+  --button-color-text: var(--button-tertiary-color-text);
 }
 
 .badge {
@@ -515,12 +524,11 @@ body {
   background: #D5CFFC;
 }
 .module--medium .button:not(.button--2):not(.button--3) {
-  --button-color-background: #8070F5;
-  --button-color-text: #ffffff;
+  --button-color-background: var(--button-tertiary-color-background);
+  --button-color-text: var(--button-tertiary-color-text);
 }
 .module--dark {
-  --color-title: #ffffff;
-  --color-title-2: #ffffff;
+  --color-title: var(--color-text-negative);
   background-color: var(--module-color-background);
   background-image: var(--module-gradient-background);
   color: #ffffff;
@@ -529,17 +537,18 @@ body {
   background: #8070F5;
   color: #ffffff;
 }
-.module--dark .button {
-  --button-color-background: #ffffff;
-  --button-color-text: #2C10EF;
+.module--dark .button:not(.button--2):not(.button--3) {
+  --button-color-background: var(--button-secondary-color-background);
+  --button-color-text: var(--button-secondary-color-text);
 }
 
 .hero {
-  --color-title: #ffffff;
-  --color-title-2: #ffffff;
+  --color-title: var(--color-text-negative);
   padding: 5rem 0;
   background-color: var(--module-color-background);
   background-image: var(--module-gradient-background);
+  background: url(../_gfx/image.jpg) center center no-repeat;
+  background-size: cover;
   color: #ffffff;
   position: relative;
   /*&::before {
@@ -589,12 +598,6 @@ body {
   line-height: 1.1667em;
   margin: 0 0 1rem 0;
   color: var(--color-title);
-  /*
-    @if ($color == dark) {
-      color: $color_ink_100;
-    } @else if ($color == light) {
-      color: $color_1;
-    }*/
 }
 .hero__body__title + .button {
   margin-top: 2rem;
@@ -617,8 +620,8 @@ body {
   color: #ffffff;
 }
 .hero__body .button {
-  --button-color-background: #ffffff;
-  --button-color-text: #2C10EF;
+  --button-color-background: var(--button-secondary-color-background);
+  --button-color-text: var(--button-secondary-color-text);
 }
 .hero__media {
   width: calc(100% - 34rem);
@@ -675,6 +678,7 @@ body {
   font-size: 2rem;
   line-height: 1.25em;
   margin: 0 0 1rem 0;
+  color: var(--color-title);
 }
 .content-image__body__title + .button {
   margin-top: 2rem;
@@ -684,7 +688,7 @@ body {
   font-size: 1.25rem;
   line-height: 1.5em;
   margin: 0 0 1rem 0;
-  color: var(--color-title-2);
+  color: var(--color-title);
   margin-bottom: 3rem;
 }
 .content-image__body__content p {
@@ -718,13 +722,11 @@ body.force-xmas {
   --color-body-background: #025103;
   --color-body-text: #ffffff;
   --color-title: #C3984D;
-  --color-title-2: #ffffff;
   --module-color-background: var(--color-body-background);
   --module-gradient-background: none;
 }
 body.force-xmas .module--dark {
   --color-title: #C3984D;
-  --color-title-2: #ffffff;
 }
 body.force-xmas .button {
   --button-color-background: #9E0000;

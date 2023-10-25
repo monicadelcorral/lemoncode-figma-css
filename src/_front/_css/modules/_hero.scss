@@ -5,14 +5,13 @@
 //----------------------------------------//
 
 .hero {
-    --color-title: #{$color_1};
-    --color-title-2: #{$color_1};
+    --color-title: var(--color-text-negative);
     
     padding: $module_space 0;
     background-color: var(--module-color-background);
     background-image: var(--module-gradient-background);
-    //background: url(../_gfx/image.jpg) center center no-repeat;
-    //background-size: cover;
+    background: url(../_gfx/image.jpg) center center no-repeat;
+    background-size: cover;
     color: $color_1;
     position: relative;
 
@@ -55,7 +54,7 @@
         }
 
         .button {
-            @include button-light();
+            @include button-secondary();
         }
     }
 
@@ -63,6 +62,7 @@
         width: calc(100% - 34rem);
         margin-right: -2rem;
         position: relative;
+        padding: 4rem;
         
         img {
             display: block;
@@ -72,7 +72,6 @@
             z-index: 10;
         }
         
-        padding: 4rem;
         &::before {
             content: '';
             display: block;

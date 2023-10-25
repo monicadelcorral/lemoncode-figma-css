@@ -75,24 +75,40 @@ $color_ink_900 : #E5E4E7;
 
 $gradient_1 : linear-gradient(109.15deg, $color_primary_500 0%, #7562F4 31.77%, #8E7EF6 50.52%, #7462F4 68.75%, #4128F0 100%);
 
-// Button colors default
-
-$button_color_bg : var(--button-color-background);
-$button_color_text   : var(--button-color-text);
-
-
 :root {
 
-    --color-body-background : #{$body_background};
-    --color-body-text : #{$color_primary_100};
+    --color-accent : #{$color_primary_500};
+    --color-accent-negative : #{$color_1};
 
-    --button-color-background : #{$color_primary_500};
-    --button-color-text : #{$color_1};
+    --color-accent-2 : #{$color_primary_700};
+    --color-accent-2-negative : #{$color_1};
+    
+    --color-accent-3 : #{$color_primary_300};
+    --color-accent-3-negative : #{$color_1};
 
-    --module-color-background: #{$color_primary_700};
+    --color-text : #{$color_primary_100};
+    --color-text-2 : #{$color_ink_100};
+    --color-text-negative : #{$body_background};
+
+
+    --color-body-background : var(--color-text-negative);
+    --color-body-text : var(--color-text);
+
+    --button-color-background : var(--color-accent);
+    --button-color-text : var(--color-accent-negative);
+
+    --button-hover-color-background:  var(--color-accent-3);
+    --button-hover-color-text : var(--color-accent-3-negative);
+
+    --button-secondary-color-background : var(--color-accent-negative);
+    --button-secondary-color-text : var(--color-accent);
+
+    --button-tertiary-color-background : var(--color-accent-2);
+    --button-tertiary-color-text : var(--color-accent-2-negative);
+
+    --module-color-background: var(--color-accent-2);
     --module-gradient-background: #{$gradient_1};
 
-    --color-title: #{$color_ink_100};
-    --color-title-2: #{$color_ink_500};
+    --color-title: var(--color-text-2);
 
 }

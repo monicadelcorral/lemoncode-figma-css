@@ -20,13 +20,12 @@
         background: $color_primary_900;
 
         .button:not(.button--2):not(.button--3) {
-            @include button-medium();
+            @include button-tertiary();
         }
     }
 
     &--dark {
-        --color-title: #{$color_1};
-        --color-title-2: #{$color_1};
+        --color-title: var(--color-text-negative);
         
         background-color: var(--module-color-background);
         background-image: var(--module-gradient-background);
@@ -37,8 +36,8 @@
             @include badge-dark();
         }
 
-        .button {
-            @include button-light();
+        .button:not(.button--2):not(.button--3) {
+            @include button-secondary();
         }
     }
 }
